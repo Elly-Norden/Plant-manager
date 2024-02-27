@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Plant manager</title>
+    <script src="plant_manager.js"></script>
+    <link rel="stylesheet" type="text/css" href="plant_manager.css">
+</head>
+
+<body>
+    <header>
+        <button type="button" id="add-plant-button" class="add-button">Add a plant</button>
+    </header>
+    <div class="popup-container">
+        <div id="add-plant-popup" class="popups">
+            <div class="popup-header">
+                <span class="popup-header">Add a plant</span>
+                <button type="button" id="close-add-plant-popup" class="close-button">x</button>
+            </div>
+            <div class="input-fields-container">
+                <label for="name-of-plant" class="input-label">Name:</label>
+                <input type="text" name="name-of-plant" id="name-of-plant" class="popup-input" size="20">
+                <label for="date-of-watering" class="input-label">Date of watering:</label>
+                <input type="date" name="date-of-watering" id="date-of-watering" class="popup-input">
+                <label for="plant-notes" class="input-label">Notes:</label>
+                <textarea name="text" id="plant-notes" class="popup-textarea"></textarea>
+            </div>
+            <button type="button" id="save-plant" class="add-button">Save</button>
+        </div>
+        <div id="blur-bg"></div>
+    </div>
+    <div id="plant-cards"></div>
+</body>
+
+</html>
